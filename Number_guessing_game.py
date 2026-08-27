@@ -36,5 +36,3 @@ print('Game Ended')
 
 
 
-
-#print(num)
