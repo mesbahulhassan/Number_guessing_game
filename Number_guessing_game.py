@@ -13,22 +13,25 @@ while guesses > 0:
         while guess > high or guess < low:
             print(f'Your guess is out of range {low} and {high}')
             guess = int(input(f'Guess a number from {low} to {high}: '))
-            if guess > num:
-                guesses -= 1
-                print(f"Guess Lower \nRemained attempt {guesses}")
-            
-            elif guess < num:
-                guesses -= 1
-                print(f"Guess Higher \nRemained attempt {guesses}")
-            
-            else:
-                print('You Guessed correctly ')
-                break
+
+        if guess > num:
+            guesses -= 1
+            print(f"Guess Lower\nRemaining attempt {guesses}")
+
+        elif guess < num:
+            guesses -= 1
+            print(f"Guess Higher\nRemaining attempt {guesses}")
+
+        else:
+            print("You guessed correctly")
+            break
 
     except ValueError:
         print("Value Error --> Enter a real Integer from this range")
 
 print('Game Ended')
+
+
 
 
 
